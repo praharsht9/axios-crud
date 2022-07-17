@@ -29,8 +29,13 @@ const Api = () => {
 
 	useEffect(() => {
 		const getPost = async () => {
-			const { data: res } = await axios.get(apiEndPoint);
-			setPost(res);
+			// const { data: response } = await axios.get(apiEndPoint);
+			// setPost(response);
+			// console.log(response);
+			await axios.get(apiEndPoint).then((res) => {
+				console.log(res);
+				setPost(res.data);
+			});
 		};
 		getPost();
 	}, []);

@@ -37,12 +37,6 @@ const Api = () => {
 		getPost();
 	}, []);
 
-	// const addPost = async () => {
-	// 	const post = { title: 'New post', body: 'new' };
-	// 	await axios.post(apiEndPoint, post);
-	// 	setPost([post, ...post]);
-	// };
-
 	return (
 		<div>
 			<h2> There are {posts.length} post in the database</h2>

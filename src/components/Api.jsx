@@ -1,8 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Button } from 'bootstrap';
-// import { Button } from 'react-bootstrap/Button';
 
 const Api = () => {
 	const [posts, setPost] = useState([]);

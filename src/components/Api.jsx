@@ -71,7 +71,6 @@ const Api = () => {
 									onClick={() => {
 										handleDelete(post);
 									}}
-									// onClick={() => handleDelete(post)}
 								>
 									Delete
 								</button>
